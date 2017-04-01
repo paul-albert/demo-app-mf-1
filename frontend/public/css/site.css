@@ -1,0 +1,218 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+    float:  inside;
+}
+
+.container > .breadcrumb {
+    padding-left: 0px;
+}
+
+.container > .container-left-menu {
+    float: left;
+    /* width: 20%; */
+    margin-left: -15px;
+}
+.container > .container-content {
+    float: left;
+    width: 90%;
+}
+
+.navbar-collapse {
+    padding-left: 0px;
+}
+
+.navbar .navbar-fixed-left,
+.container-left-menu > .navbar > .container {
+    margin-left: -15px;
+    width: 15%;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    width: 215px;
+}
+.nav-pills > li > a,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+    width: 215px;
+}
+
+.navbar-stacked-label {
+    margin-left: 15px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #dcdcdc;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.tab-content > .tab-pane {
+    margin-top: 20px;
+}
+
+.gridview-invisible-history,
+.gridview-invisible-service,
+.gridview-invisible-place {
+    display: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: #337ab7;
+    /*
+    border: 1px solid #337ab7;
+    border-bottom-color: transparent;
+    */
+}
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    border-color: #ccc;
+    border-bottom-color: transparent;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+left-menu > ul {
+    width: 90%;
+}
+left-menu > ul > li {
+    list-style-type: none;
+    margin-left: -25px;
+}
+left-menu > ul > li.active > span > a {
+    color: #fff;
+    background-color: #337ab7;
+}
+left-menu .navbar-stacked-label {
+    margin-left: -3px;
+}
+
+.table-bordered > tbody > tr > td.price {
+    text-align: right;
+}
+.table-bordered > tbody > tr > td.price:after {
+    /* content: ' €'; */
+}
+.table-bordered > tbody > tr > td > button.btn {
+    padding: 2px 4px;
+}

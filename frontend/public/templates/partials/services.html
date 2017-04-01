@@ -1,0 +1,37 @@
+<table class="table table-striped table-bordered" ng-table="servicesTable">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>id</th>
+            <th>Service name</th>
+            <th>Horse</th>
+            <th>Performed by</th>
+            <th>Start date</th>
+            <th>End date</th>
+            <th>Price</th>
+            <th>Account type</th>
+            <th>Contract number</th>
+            <th>Active</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="s in services">
+            <td>{{ $index + 1 }}</td>
+            <td>{{ s.id }}</td>
+            <td>{{ s.service_name }}</td>
+            <td>{{ s.horse_name }}</td>
+            <td>{{ s.performed_by }}</td>
+            <td>{{ s.start_date }}</td>
+            <td>{{ s.end_date }}</td>
+            <td class="price">{{ s.price | currency : "" : 2 }} €</td>
+            <td>{{ s.account_type }}</td>
+            <td>{{ s.contract_number }}</td>
+            <td><input type="checkbox" ng-checked="{{ s.active | serviceActive }}" disabled="disabled"/></td>
+            <td>
+                <button type="button" class="btn btn-primary" ng-click="editService(s)">Edit</button>
+                <button type="button" class="btn btn-danger" ng-click="deleteService(s.id)">Del</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,10 @@
+<ul bs-active-link>
+    <li ng-repeat="item in menu">
+        <span ng-if="item.linkable === true">
+        <a href="{{item.link}}">{{item.name}}</a>
+        </span>
+        <span ng-if="item.linkable !== true">
+        <label class="navbar-stacked-label">{{item.name}}</label>
+        </span>
+    </li>
+</ul>

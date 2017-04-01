@@ -1,0 +1,20 @@
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>id</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="c in clients">
+            <td>{{ $index + 1 }}</td>
+            <td>{{ c.id }}</td>
+            <td>{{ c.first_name }}</td>
+            <td>{{ c.last_name }}</td>
+            <td>{{ c.city }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Clients",
+        "link": "#/clients/",
+        "linkable": true
+    },
+    {
+        "name": "Suppliers",
+        "link": "#/suppliers/",
+        "linkable": true
+    },
+    {
+        "name": "Employees",
+        "link": "#/employees/",
+        "linkable": true
+    },
+    {
+        "name": "Plannings",
+        "link": "#/plannings/",
+        "linkable": true
+    },
+    {
+        "name": "",
+        "link": "#",
+        "linkable": false
+    },
+    {
+        "name": "Settings",
+        "link": "#",
+        "linkable": false
+    },
+    {
+        "name": "Services",
+        "link": "#/services/",
+        "linkable": true
+    },
+    {
+        "name": "Boxes",
+        "link": "#/boxes/",
+        "linkable": true
+    }
+]
