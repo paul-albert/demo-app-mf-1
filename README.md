@@ -68,7 +68,7 @@ or:
 
 * Run our new RESTful web-service:
 
-`python ./app/main.py` (here you can use "http://127.0.0.1:5001/"; CTRL+C - for break server)
+`python ./app/main.py` (here you can use "http://127.0.0.1:5001/"; CTRL+C - for break the service)
 
 * `deactivate` _(optional step, for virtual environment's turn off only)_
 
